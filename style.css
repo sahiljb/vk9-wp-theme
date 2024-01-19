@@ -1,0 +1,56 @@
+/*
+Theme Name: VK9
+Theme URI: https://vk9.sahilbuddhadev.me
+Template: twentytwentyfour
+Author: Sahil Buddhadev
+Author URI: https://sahilbuddhadev.me
+Description: A child theme for vk9
+Version: 1.0.0
+*/
+
+body {
+	--wp--preset--font-family--body: "Roobert";
+	--wp--preset--font-family--heading: "Roobert";
+}
+
+*{
+    font-family: "Roobert";
+}
+
+.entry-content.wp-block-post-content {
+	margin-top: 0;
+}
+
+.wp-block-woocommerce-customer-account,
+.home main>div:first-child {
+    display: none;
+}
+
+.wc-block-mini-cart__button {
+    padding: 0;
+}
+
+.no-click {
+    pointer-events: none;
+}
+
+.footer-copyright-menu li a:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    background: #000;
+    height: 60%;
+    width: 2px;
+    transform: translate(0, -50%);
+}
+
+.footer-copyright-menu li:last-child a:after {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+	.footer-widget {
+		min-width: 142px;
+	}
+}
